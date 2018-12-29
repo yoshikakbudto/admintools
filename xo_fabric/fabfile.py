@@ -41,18 +41,17 @@ except KeyError:
 
 # remote build machines per platform
 BUILD_BOTS = {
-    'linux': 'builduser@builder-ubuntu14-02.vm.targem.local',  # emo-ubuntu64
+    'linux': 'builduser@builder-ubuntu14-02.vm.tgm.local',  # emo-ubuntu64
     'pc': 'builduser@192.168.20.3',
     'ps4': 'builduser@192.168.20.3',
     'vagrant_linux': 'vagrant@10.20.30.101',
-    'centos': 'builduser@builder-centos7-{0}.targem.local'.format(TC_AGENT_NAME),
-    'centos-pxo': 'builduser@build-server-lw-nl-01.pxo',
+    'centos': 'builduser@builder-centos7-{0}.tgm.local'.format(TC_AGENT_NAME),
 }
 
 # isolate private builds from devservers's
 BUILD_BOTS_PRIVATE = {
-    #'centos': 'builduser@builder-centos7-private.targem.local',
-    'centos': 'builduser@builder-centos7-02.vm.targem.local',
+    #'centos': 'builduser@builder-centos7-private.tgm.local',
+    'centos': 'builduser@builder-centos7-02.vm.tgm.local',
 }
 
 # used to find proper rsync, echo and other cygwin tools
